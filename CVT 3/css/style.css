@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Rubik-Medium";
+    src: url('../fonts/Rubik-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Rubik-Regular";
+    src: url('../fonts/Rubik-Regular.ttf');
+}
+
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.wrapper{
+    width: 1180px;
+    height: 100%;
+    
+   /* background-color: greenyellow;*/
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   /* background: cornflowerblue;*/
+    margin-top: 32px;
+    margin-bottom: 44px;
+}
+
+.logo:hover,
+.header__search_input:hover,
+.header__search_btn:hover,
+.header__entry:hover
+{
+    cursor: pointer;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.logo p{
+    margin-left: 11.88px;
+    font-family: "Rubik-Medium";
+    font-size: 20px;
+}
+
+.header__search_btn{
+    margin-left: 32px;
+    font-family: "Rubik-Medium";
+    font-size: 16px;
+    background: none;
+    border: none;
+    color:#E5261E;
+}
+
+.header__entry{
+    font-family: "Rubik-Medium";
+    font-size: 16px;   
+    width: 113px;
+    height: 38px;
+    background-color: #E5261E;
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+
+.header__entry:hover{
+    background-color: #CC221B;
+}
+
+.header__search_input::placeholder{
+    font-family: "Rubik-Regular";
+    font-size: 16px;
+    padding-bottom: 6px;
+}
+
+.header__search_input{
+    border: none;
+    border-bottom: 1px solid #333333;
+    width: 320px;
+    height: 18px;
+    font-family: "Rubik-Medium";
+    font-size: 16px;
+    padding-bottom: 6px;
+}
+
+.header__search_input:focus{
+    outline: none;
+}
+
+.main__nav{
+    margin-bottom: 32px;
+}
+
+.nav__ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav__ul li{
+    list-style-type: none;
+}
+
+.nav__a{
+    text-decoration: none;
+    font-family: "Rubik-Medium";
+    font-size: 28px;
+    color: #333333;
+}
+
+.nav__a:first-child{
+    margin-right: 25px;
+}
+
+.nav__a:hover{
+    border-bottom: 2px solid #E5261E;
+    color: #E5261E;
+    padding-bottom: 9px;
+}
+
+.name__part{
+    font-family: "Rubik-Medium";
+    font-size: 24px;  
+    margin-bottom: 16px;
+}
+.new{
+    margin-bottom: 32px;
+}
+
+.items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item{
+    width: 280px;
+}
+.item_hover{
+    position: relative;
+}
+
+.item__img{
+    border-radius: 8px;
+    margin-bottom: 16px;
+    
+}
+
+.item_hover_text{
+    position: absolute;
+    width: 248px;
+	height:338px;
+    padding:16px;
+    top:0px;
+    left:0px;
+    color: white;
+    background: #333333;
+    border-radius: 8px;
+    opacity: 0;
+    font-family: "Rubik-Regular";
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.item_hover_text:hover{
+    opacity: 0.8;
+    transition-delay: .3s;
+    transition-timing-function:ease;
+    cursor: pointer;
+}
+
+.item__p{
+    font-family: "Rubik-Regular";
+    font-size: 20px;
+}
+
+.genre__comedy,
+.genre__drama,
+.genre__fantastic,
+.genre__horror
+{
+width: 280px;
+height: 208px;
+border-radius: 6px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+position: relative;
+}
+
+.genre__comedy:hover,
+.genre__drama:hover,
+.genre__fantastic:hover,
+.genre__horror:hover
+{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.items__p_name{
+    position: absolute;
+    top: 160px;
+    font-family: "Rubik-Regular";
+    font-size: 20px;
+    color: white;
+}
+
+.items__emoji{
+    font-size: 48px;
+}
+
+.genre__comedy {
+    background: linear-gradient(127.83deg, #F2C94C 8.44%, #F29A4A 91.36%);
+    opacity: 0.8;
+    box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);  
+}
+
+.genre__drama{
+    background: linear-gradient(127.83deg, #F2994A 8.44%, #EB5757 91.36%);
+    opacity: 0.8;
+    box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+}
+
+.genre__fantastic{
+    background: linear-gradient(127.83deg, #56CCF2 8.44%, #2F80ED 91.36%);
+    opacity: 0.8;
+    box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+}
+
+.genre__horror{
+    background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);
+    opacity: 0.8;
+    box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+}
+
+.footer{
+    position: relative;
+    height:120px;
+    display: flex;
+    justify-content: start;
+    background: #F2F2F2;
+    margin-top: 72px;
+    }
+
+    footer:before, footer:after {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        content:  '' ;
+        background-color: #f2f2f2;
+        width: 100%;
+    }
+    
+    footer:before {
+        right: 100%
+    }
+    
+    footer:after {
+        left: 100%;
+    } 
+
+    .footer img {
+    width: 31.99px;
+    height: 64px;
+    margin-right: 39.98px;
+    margin-top: 28px;
+    }
+
+    .a_footer {
+        font-family: "Rubik-Medium";
+        font-size: 16px;
+        color: #1F4766;
+        margin-top: 10px;
+        }
+
+    .p_footer {
+        font-family: "Rubik-Regular";
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 28px;
+        line-height: 22px;
+    }
